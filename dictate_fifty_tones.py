@@ -59,7 +59,7 @@ def random_kana() -> tuple:
 
 # 抽取 假名，输入给出罗马音
 def pick_name_card() -> (bool, str):
-    kana, kana_type = random_kana()
+    kana, kana_type, roman = random_kana()
     print(f'随机选择的{kana_type}字符是：{kana}')
 
     user_input = input('请输入注音（音）：')
